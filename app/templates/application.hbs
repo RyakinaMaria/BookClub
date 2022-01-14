@@ -1,5 +1,46 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">
+    <img src="images/logo-dark.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Книжный клуб
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Открыть меню">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="nav navbar-nav navigation-main">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Рабочий стол <span class="sr-only">(текущий)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Встречи клуба</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Книги</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Спикеры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-success" href="#">Оставить заявку</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="#">Запланировать</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link text-info" href="#">Регистрация</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Войти</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 {{outlet}}
+<footer class="footer">
+    <div class="container">
+      <span>&copy; Skyori, 2020</span>
+    </div>
+</footer>
