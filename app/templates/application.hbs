@@ -1,8 +1,8 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">
-    <img src="images/logo-dark.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+  {{#link-to "index" class="navbar-brand"}}
+    <img src="/images/logo-dark.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
     Книжный клуб
-  </a>
+  {{/link-to}}
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Открыть меню">
     <span class="navbar-toggler-icon"></span>
@@ -10,16 +10,16 @@
   <div class="collapse navbar-collapse" id="navbarContent">
     <ul class="nav navbar-nav navigation-main">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Рабочий стол <span class="sr-only">(текущий)</span></a>
+        {{#link-to "index" class="nav-link"}}Рабочий стол <span class="sr-only">(текущий)</span>{{/link-to}}
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Встречи клуба</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Книги</a>
+        {{#link-to "books" class="nav-link"}}Книги{{/link-to}}
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Спикеры</a>
+        {{#link-to "speakers" class="nav-link"}}Спикеры{{/link-to}}
       </li>
       <li class="nav-item">
         <a class="nav-link text-success" href="#">Оставить заявку</a>

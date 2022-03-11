@@ -1,0 +1,7 @@
+<div class="custom-file">
+  <input type="file" class="custom-file-input" id="customFile" lang="ru">
+  <label class="custom-file-label form-control-lg {{if isFileChoosen "" "placeholder-color"}}" for="customFile" data-browse="Выбрать">{{fileName}}</label>
+</div>
+<div class="input-group-append">
+  <button class="btn btn-outline-secondary custom-file-clear" type="button" disabled={{ifRemoveButtonDisabled}} onclick={{action "removeFile"}}>X</button>
+</div>

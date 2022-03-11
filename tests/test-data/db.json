@@ -1,0 +1,80 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Триумфальная арка",
+      "author": "Ремарк Эрих Мария",
+      "pageCount": 509,
+      "coverUrl": "",
+      "descriptionUrl": "",
+      "tags": "Классика,Вторая мировая война",
+      "avgRating": 5
+    },
+    {
+      "id": 2,
+      "title": "Ложится мгла на старые ступени",
+      "author": "Чудаков Александр",
+      "pageCount": 640,
+      "coverUrl": "",
+      "descriptionUrl": "",
+      "tags": "Классика,Мемуары",
+      "avgRating": 5
+    },
+    {
+      "id": 3,
+      "title": "451 по Фаренгейту",
+      "author": "Брэдбери Рэй",
+      "pageCount": 272,
+      "coverUrl": "https://ru.wikipedia.org/wiki/451_%D0%B3%D1%80%D0%B0%D0%B4%D1%83%D1%81_%D0%BF%D0%BE_%D0%A4%D0%B0%D1%80%D0%B5%D0%BD%D0%B3%D0%B5%D0%B9%D1%82%D1%83",
+      "descriptionUrl": "",
+      "tags": "Фантастика,Антиутопия",
+      "avgRating": 5,
+      "coverURL": "/uploads/239px-451_градус_по_Фаренгейту-1646909650957.jpg"
+    },
+    {
+      "title": "Норвежский лес",
+      "author": "Мураками Харуки",
+      "pageCount": "368",
+      "coverUrl": "https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D1%80%D0%B2%D0%B5%D0%B6%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B5%D1%81",
+      "descriptionUrl": "",
+      "tags": "",
+      "id": 4
+    },
+    {
+      "title": "1984",
+      "author": "Оруэлл Джордж",
+      "pageCount": "320",
+      "coverUrl": "https://ru.wikipedia.org/wiki/1984_(%D1%80%D0%BE%D0%BC%D0%B0%D0%BD)",
+      "descriptionUrl": "",
+      "tags": "Антиутопия",
+      "id": 5,
+      "coverURL": "/uploads/2397510_detail-1646918774942.jpg"
+    }
+  ],
+  "speakers": [
+    {
+      "id": 1,
+      "lastName": "Абрамов",
+      "firstName": "Николай",
+      "patronymic": "Михайлович"
+    },
+    {
+      "id": 2,
+      "lastName": "Ершов",
+      "firstName": "Александр",
+      "patronymic": "Владимирович"
+    },
+    {
+      "id": 3,
+      "lastName": "Скворцова",
+      "firstName": "Евгения",
+      "patronymic": "Александровна"
+    },
+    {
+      "lastName": "Калинин",
+      "firstName": "Константин",
+      "patronymic": "Юрьевич",
+      "id": 4
+    }
+  ]
+}

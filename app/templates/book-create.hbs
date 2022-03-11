@@ -1,0 +1,48 @@
+<div class="container h-100">
+  <div class="htop">
+    <h2 class="text-center">Добавление книги</h2>
+    <form class="edit-form" onsubmit={{action "saveBook"}}>
+      <div class="form-group row">
+        <label for="inputTitle" class="col-sm-2 col-form-label text-right">Название</label>
+        <div class="col-sm-10">
+          {{input type="text" class="form-control form-control-lg" id="inputTitle" placeholder="Полное название книги" value=model.title}}
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputAuthor" class="col-sm-2 col-form-label text-right">Автор</label>
+        <div class="col-sm-10">
+          {{input type="text" class="form-control form-control-lg" id="inputAuthor" placeholder="Фамилия И.О. автора" value=model.author}}
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPagesCount" class="col-sm-2 col-form-label text-right">Объем</label>
+        <div class="col-sm-10">
+          {{input type="number" class="form-control form-control-lg" id="inputPagesCount" placeholder="Количество страниц книги" value=model.pageCount}}
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputDescriptionURL" class="col-sm-2 col-form-label text-right">Описание</label>
+        <div class="col-sm-10">
+          {{input type="url" class="form-control form-control-lg" id="inputDescriptionURL" placeholder="Ссылка на сайт с описанием книги" value=model.coverUrl}}
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="customFile" class="col-sm-2 col-form-label text-right">Обложка</label>
+        {{input-file class="input-group input-group-lg col-sm-10" uploadData=uploadData uploadDataChanged=(action "changeUploadData")}}
+      </div>
+      <div class="form-group row">
+        <label for="inputTags" class="col-sm-2 col-form-label text-right">Теги</label>
+        <div class="col-sm-10">
+          <!-- <input type="text" class="form-control" id="inputPatronymic" placeholder="#Теги через запятую"> -->
+          {{input-tags tags=model.tagsArr onChange=(action "changeTags")}}
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-12 text-right">
+          <button type="submit" class="btn btn-primary btn-lg">Сохранить</button>
+          {{#link-to "books" class="btn btn-outline-secondary btn-lg"}}Отмена{{/link-to}}
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
